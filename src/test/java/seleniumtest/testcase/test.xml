@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Object test example">
+    <parameter name="browserType" value="chrome" />
+    <parameter name="appURL"
+               value="https://dev.agora-colearning.space/home/" />
+
+    <test name="sample test">
+        <classes>
+            <class name="seleniumtest.testcase.SelectthecourseTest">
+                <methods>
+                    <include name="selectTheCourse" />
+                </methods>
+            </class>
+<!--            <class name="seleniumtest.testcase.CheckthecourseincartTest">-->
+<!--                <methods>-->
+<!--                    <include name="checkTheCourseInCart" />-->
+<!--                </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+</suite>
